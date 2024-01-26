@@ -46,6 +46,12 @@ type = "categories"
 limit = 10
 
 [[widgets.homepage]]
+type = "course"
+
+[widgets.homepage.params]
+limit = 10
+
+[[widgets.homepage]]
 type = "tag-cloud"
 
 [widgets.homepage.params]

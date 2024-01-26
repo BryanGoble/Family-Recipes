@@ -1,7 +1,8 @@
 ---
-draft: true
+draft: true # Use this only for setting draft status
+hidden: false # Use this to hide unwanted recipes
 title: Template
-image:
+image: cover.png
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
 slug: template
 date: 2022-03-06 00:00:00+0000
