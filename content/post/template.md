@@ -1,15 +1,22 @@
 ---
-title: Markdown Syntax Guide
-date: 2023-09-07
+draft: true
+title: Template
+image:
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
-tags: 
-    - markdown
-    - css
-    - html
-    - themes
-categories:
-    - themes
-    - syntax
+slug: template
+date: 2022-03-06 00:00:00+0000
+tags: [tag1, tag2, tag3]
+categories: [category1, category2]
+
+links:
+  - title: GitHub
+    description: GitHub is the world's largest software development platform.
+    website: https://github.com
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+    
+weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+
+comments: false
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

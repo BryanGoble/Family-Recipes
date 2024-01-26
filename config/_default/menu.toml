@@ -7,7 +7,7 @@
 #icon = "home"
 #newtab = true
 
-# COnfigure Social Icons in left sidebar
+# Configure Social Icons in left sidebar
 #[[social]]
 #identifier = "github"
 #name = "GitHub"
