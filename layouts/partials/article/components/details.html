@@ -9,9 +9,9 @@
     </header>
     {{ end }}
 
-    {{ if .Params.courses }}
+    {{ if .Params.cuisines }}
     <header class="article-category">
-        {{ range (.GetTerms "courses") }}
+        {{ range (.GetTerms "cuisines") }}
             <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
                 {{ .LinkTitle }}
             </a>
