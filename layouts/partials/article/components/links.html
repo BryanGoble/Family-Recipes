@@ -1,0 +1,43 @@
+<div class="article-list--compact links">
+    {{ range $i, $link := .Params.links }}
+        <article>
+            <a href="{{ $link.website }}" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">
+                        {{- $link.title -}}
+                    </h2>
+                    <footer class="article-time">
+                        {{ with $link.description }}
+                            {{ . }}
+                        {{ else }}
+                            {{ $link.website }}
+                        {{ end }}
+                    </footer>
+                </div>
+        
+                {{ with $link.image }}
+                    {{ $ogimage := printf `<div id="og-image-container-%d" class="article-image"></div><script>document.addEventListener('DOMContentLoaded', function() {fetch('%s').then(response => {
+                        if (!response.ok) {
+                            return null; // Return null if there's an HTTP error
+                        }
+                        return response.text();
+                    }).then(html => {
+                        if (html === null) {
+                            return; // Don't proceed if there's an HTTP error
+                        }
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
+                        const ogImageTag = doc.querySelector('meta[property="og:image"]');
+                        if (ogImageTag) {
+                            const ogImageUrl = ogImageTag.getAttribute('content');
+                            document.querySelector('#og-image-container-%d').innerHTML = '<img src="' + ogImageUrl + '" alt="OG Image" loading="lazy">';
+                        }
+                    });});</script>` $i $link.website $i }}
+                    {{ safeHTML $ogimage }}
+                {{ end }}
+
+
+            </a>
+        </article>
+    {{ end }}
+</div>

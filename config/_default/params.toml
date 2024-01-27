@@ -46,7 +46,7 @@ type = "categories"
 limit = 10
 
 [[widgets.homepage]]
-type = "course"
+type = "cuisine"
 
 [widgets.homepage.params]
 limit = 10

@@ -18,4 +18,10 @@ disqusShortname = "family-recipes"
 [taxonomies]
 tag = 'tags'
 category = 'categories'
-course = 'courses'
+cuisine = 'cuisines'
+
+# Custom output for Meta OG Images
+[outputFormats.OGImage]
+  baseName = "ogimage"
+  isHTML = true
+  isPlainText = true

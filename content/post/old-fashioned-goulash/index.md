@@ -1,16 +1,24 @@
 ---
 draft: false
+type: recipe # Points to \layouts\recipe\
+layout: single # Sets layout to {type}\single.html
+slug:
 title: Old-Fashioned Goulash
 description: description
-slug:
 image:
 tags: [tag1, tag2, tag3]
-categories: ["main course", category2]
-cuisine: American
+categories: "Main Course"
+cuisines: American
 date: 2020-10-15
 preptime: 10
 cooktime: 60
 servings: 6
+
+links:
+  - title: AllRecipes
+    description: AllRecipes is the world's largest collection of shareable recipes.
+    website: https://apnews.com
+    image: '{{< ogimage url="" >}}'
 ---
 
 ## Ingredients

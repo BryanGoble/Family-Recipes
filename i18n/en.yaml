@@ -54,9 +54,9 @@ widget:
     categoriesCloud:
         title:
             other: Categories
-    courseCloud:
+    cuisineCloud:
         title:
-            other: Course
+            other: Cuisine
 
 search:
     title:
