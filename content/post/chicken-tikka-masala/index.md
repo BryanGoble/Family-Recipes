@@ -7,7 +7,7 @@ draft: false
 tags: [bonappetit.com]
 categories: ["Example Category"]
 cuisine: [Indian]
-course: [Main]
+courses: ["Main", "Side"]
 prepTimeMinutes: 30 
 cookTimeMinutes: 60
 servings: 6
