@@ -25,3 +25,17 @@ cuisine = 'cuisines'
   baseName = "ogimage"
   isHTML = true
   isPlainText = true
+
+# Define the styling parameters for categories, tags, cuisines
+[params]
+  [params.categoryStyle]
+    background = "#739E82"
+    color = "rgb(255 255 255 / 90%)"
+
+  [params.cuisineStyle]
+    background = "#2292A4"
+    color = "rgb(255 255 255 / 90%)"
+
+  [params.tagStyle]
+    background = "#FF715B"
+    color = "rgb(255 255 255 / 90%)"

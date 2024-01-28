@@ -1,0 +1,10 @@
+{{ if .Params.Tags }}
+    <section class="article-tags">
+        {{ range (.GetTerms "tags") }}
+        <a href="{{ .RelPermalink }}" style="background-color: {{ with .Params.style }}{{ .background }}{{ else }}{{ with $.Site.Params.tagStyle }}{{ .background }}{{ end }}{{ end }};
+                                                color: {{ with .Params.style }}{{ .color }}{{ else }}{{ with $.Site.Params.tagStyle }}{{ .color | safeCSS }}{{ end }}{{ end }};">
+            {{ .LinkTitle }}
+        </a>
+        {{ end }}
+    </section>
+{{ end }}

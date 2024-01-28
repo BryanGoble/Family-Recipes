@@ -1,18 +1,20 @@
 <div class="article-details">
     {{ if .Params.categories }}
-    <header class="article-category">
-        {{ range (.GetTerms "categories") }}
-            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
-                {{ .LinkTitle }}
-            </a>
-        {{ end }}
-    </header>
+        <header class="article-category">
+            {{ range (.GetTerms "categories") }}
+                <a href="{{ .RelPermalink }}" style="background-color: {{ with .Params.style }}{{ .background }}{{ else }}{{ with $.Site.Params.categoryStyle }}{{ .background }}{{ end }}{{ end }};
+                                                        color: {{ with .Params.style }}{{ .color }}{{ else }}{{ with $.Site.Params.categoryStyle }}{{ .color | safeCSS }}{{ end }}{{ end }};">
+                    {{ .LinkTitle }}
+                </a>
+            {{ end }}
+        </header>
     {{ end }}
 
     {{ if .Params.cuisines }}
     <header class="article-category">
         {{ range (.GetTerms "cuisines") }}
-            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
+            <a href="{{ .RelPermalink }}" style="background-color: {{ with .Params.style }}{{ .background }}{{ else }}{{ with $.Site.Params.cuisineStyle }}{{ .background }}{{ end }}{{ end }};
+                                                    color: {{ with .Params.style }}{{ .color }}{{ else }}{{ with $.Site.Params.cuisineStyle }}{{ .color | safeCSS }}{{ end }}{{ end }};">
                 {{ .LinkTitle }}
             </a>
         {{ end }}

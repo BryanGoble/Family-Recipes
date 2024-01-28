@@ -1,8 +1,7 @@
 ---
-# Defines the tag specs for Courses
 title: "{{ replace .Name "-" " " | title }}"
 image: 
-style:
-    background: "#2292A4"
+style: # Not sure what this actually changes
+    background: "#2a9d8f"
     color: "#fff"
 ---

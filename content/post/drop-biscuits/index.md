@@ -17,7 +17,7 @@ links:
   - title: Quick Easy Drop Biscuits Recipe
     description: Just 25 minutes and five ingredients stand between you and these fluffy, tender biscuits.
     website: https://www.seriouseats.com/recipes/2014/06/quick-easy-drop-biscuits-recipe.html
-    image: https://www.seriouseats.com/thmb/2eDheo2F1-nYEbQxZLGUiPjqhRs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Serious_Eats_Social_Default-72cf0bc11b434461b62c6ffc85b4298f.jpg
+    image: '{{< ogimage url="" >}}'
     
 #weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 
