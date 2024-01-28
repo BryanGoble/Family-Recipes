@@ -1,10 +1,7 @@
 ---
-type: recipe # Points to \layouts\recipe\
-layout: single # Sets layout to {type}\single.html
-
 draft: true # Use this only for setting draft status
 hidden: false # Use this to hide unwanted recipes
-slug: # template
+slug: # <post-title>
 title: Template
 description: Sample recipe layout.
 image: cover.png # Local image or URL
@@ -14,6 +11,7 @@ author: # Recipe Author or Organization (John Doe, HelloFresh)
 tags: [] # Description, Season, Holiday (quick, easy, summer, christmas)
 categories: [] # Main, Dessert, Snack, Dinner
 cuisines: [] # Region (French, American, Mediterranean)
+allergens: [] # Sesame, Soy, Wheat, Nuts, Milk
 
 calories: # 500 + kcal
 preptime: # 10
@@ -22,11 +20,14 @@ servings: # 6
 
 links:
   - title: # AllRecipes
-    description: # AllRecipes is the world's largest collection of shareable recipes.
+    description: # AllRecipes is the world's largest collection of shareable recipes
     website: # https://allrecipes.com
-    image: '{{< ogimage url="" >}}' # Dynamically updates the link image based on the website above.
-    
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+    image: '{{< ogimage url="" >}}' # Dynamically updates the link image based on the website above
+
+type: recipe # Points to \layouts\recipe\
+layout: single # Sets layout to {type}\single.html
+ 
+weight: # 1 | You can add weight to some posts to override the default sorting (date descending)
 
 comments: false # Keep False
 ---
@@ -37,14 +38,8 @@ comments: false # Keep False
   - 1 large yellow onion (diced)
   - 3 cloves minced garlic
   - 1 cup low sodium beef broth
-  - 2 14.5 oz cans diced Tomatoes with juice
-  - 2 15oz cans tomato sauce
+  - 2 15 oz cans tomato sauce
   - 2 tsp low sodium soy sauce
-  - 2 tsp salt
-  - 1 tsp black pepper
-  - 1 tbsp paprika
-  - 2 cups uncooked elbow macaroni
-  - 2 tsp Italian seasoning
 
 ## Instructions
 1. Heat soup pot on medium-high heat. Once hot, add oil, then ground beef.
