@@ -3,6 +3,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 image: 
 style:
-    background: "#2a9d8f"
+    background: "#2292A4"
     color: "#fff"
 ---

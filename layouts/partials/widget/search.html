@@ -1,0 +1,17 @@
+<!-- Modified Document -->
+{{- $query := first 1 (where .Context.Site.Pages "Layout" "==" "search") -}}
+{{- if $query -}}
+    {{- $searchPage := index $query 0 -}}
+    <form action="{{ $searchPage.RelPermalink }}" class="search-form widget" {{ with .OutputFormats.Get "json" -}}data-json="{{ .Permalink }}" {{- end }}>
+        <p>
+            <label for="keyword">{{ T "search.title" }}</label> <!-- Added for attribute to tie the label to the input -->
+            <input id="keyword" name="keyword" required placeholder="{{ T `search.placeholder` }}" /> <!-- Added the id for the label to reference -->
+        
+            <button title="{{ T `search.title` }}">
+                {{ partial "helper/icon" "search" }}
+            </button>
+        </p>
+    </form>
+{{- else -}}
+    {{- warnf "Search page not found. Create a page with layout: search." -}}
+{{- end -}}
