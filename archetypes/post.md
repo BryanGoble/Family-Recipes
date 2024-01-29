@@ -39,10 +39,24 @@ comments: false # Keep False
   - 2 tsp low sodium soy sauce
 
 ## Instructions
-1. Heat soup pot on medium-high heat. Once hot, add oil, then ground beef.
-2. Cook ground beef until browned (about 10 minutes) and spoon off some excess fat.
-3. Add diced onion and garlic. Cook for four minutes, stirring occasionally.
-4. Add beef broth, diced tomatoes, tomato sauce, soy sauce, salt, pepper, Italian seasoning, and paprika. Stir well.
-5. Reduce heat to low, cover and cook for 15 minutes, stirring occasionally.
-6. Stir in uncooked macaroni noodles, cover and cook for an additional 15-25 minutes, or until pasta is cooked.
-7. Serve and Enjoy!
+
+### Prep & Make Slaw
+• Wash and dry produce.
+• Roughly chop cilantro. Halve, core, and thinly slice green pepper.
+• In a medium bowl, toss together coleslaw mix, half the vinegar (all for 4 servings), half the cilantro, 1 tsp sugar (2 tsp for 4), and a pinch of salt until thoroughly combined.
+
+### Cook Pepper & Pork
+• Heat a drizzle of oil in a large pan over medium-high heat. Add green pepper and cook until slightly softened, 2-3 minutes.
+• Add pork* and season with salt and pepper. Cook, breaking up meat into pieces, until browned and cooked through, 4-6 minutes.
+• Stir in sweet soy glaze; cook until everything is coated and glaze has thickened, 1-2 minutes. Remove pan from heat.
+
+> Swap in beef for pork, if desired.
+
+### Mix Mayo & Warm Tortillas
+• Meanwhile, in a small bowl, combine mayonnaise with Sriracha to taste. Season with salt and pepper.
+• Wrap tortillas in damp paper towels and microwave until warm and pliable, 30 seconds.
+
+### Serve
+• Divide tortillas between plates and fill with pork mixture and slaw (draining first). Top with Sriracha mayo, crispy fried onions, and remaining cilantro. Serve.
+
+> Ground Beef is fully cooked when internal temperature reaches 160°.
