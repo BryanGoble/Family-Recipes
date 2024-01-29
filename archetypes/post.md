@@ -14,9 +14,9 @@ cuisines: [] # Region (French, American, Mediterranean)
 allergens: [] # Sesame, Soy, Wheat, Nuts, Milk
 
 calories: # 500 + kcal
-preptime: # 10
-cooktime: # 60
-servings: # 6
+preptime: # 10 | In minutes
+cooktime: # 180 = 3 Hours | In minutes
+servings: # X Dozen Cookies, X Servings, X Loafs
 
 links:
   - title: # AllRecipes

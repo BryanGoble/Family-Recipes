@@ -14,9 +14,9 @@ cuisines: [Thai] # Region (French, American, Mediterranean)
 allergens: [Sesame, Soy, Wheat, Milk] # Sesame, Soy, Wheat, Nuts, Milk
 
 calories: 760 # 500 + kcal
-preptime: 5
-cooktime: 20
-servings: 2
+preptime: 5 # In minutes
+cooktime: 20 # In minutes
+servings: "2 Servings" # X Dozen Cookies, X Servings, X Loafs
 
 links:
   - title: Moo Shu Pork Bowls # AllRecipes

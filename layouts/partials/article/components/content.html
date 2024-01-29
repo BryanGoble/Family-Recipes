@@ -1,0 +1,57 @@
+<section class="article-content">
+    <hr>
+    {{ with .Params.prepTime }}
+        {{ $prepTime := . | int }}
+        {{ $prepTimeString := "" }}
+        {{ if lt $prepTime 60 }}
+            {{ $prepTimeString = printf "%d minutes" $prepTime }}
+        {{ else }}
+            {{ $hours := div $prepTime 60 }}
+            {{ $minutes := mod $prepTime 60 }}
+            {{ $prepTimeString = printf "%d hours %d minutes" $hours $minutes }}
+        {{ end }}
+
+        <div>
+            <h3>Prep Time</h3>
+            <p>{{ $prepTimeString }}</p>
+        </div>
+    {{ end }}
+
+    {{ with .Params.cookTime }}
+        {{ $cookTime := . | int }}
+        {{ $cookTimeString := "" }}
+        {{ if lt $cookTime 60 }}
+            {{ $cookTimeString = printf "%d minutes" $cookTime }}
+        {{ else }}
+            {{ $hours := div $cookTime 60 }}
+            {{ $minutes := mod $cookTime 60 }}
+            {{ $cookTimeString = printf "%d hours %d minutes" $hours $minutes }}
+        {{ end }}
+
+        <div>
+            <h3>Cooking Time</h3>
+            <p>{{ $cookTimeString }}</p>
+        </div>
+    {{ end }}
+
+    {{ with .Params.servings }}
+        <div>
+            <h3>Servings</h3>
+            <p>{{ . }}</p>
+        </div>
+    {{ end }}
+
+    {{ with .Params.calories }}
+        {{ $calories := . | int }}
+        <div>
+            <h3>Calories</h3>
+            <p>{{ $calories }} Kcal</p>
+        </div>
+    {{ end }}
+
+    <hr>
+
+    <!-- Refer to https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5 -->
+    {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+</section>
