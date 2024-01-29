@@ -5,7 +5,7 @@ slug: # <post-title>
 title: Moo Shu Pork Bowls
 description: "This saucy, sweet, and spicy dish is ready in just 15 minutes—that’s faster than it takes to order delivery! Ground pork is browned with crisp cabbage and scallions, then simmered in a bold, punchy sauce of hoisin, Thai chili sauce, sweet soy glaze, and lime juice. It’s all spooned over buttery rice and garnished with sesame seeds for a nutty crunch. Prepare to be bowled over!"
 image: https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_400,q_30,w_800/hellofresh_s3/image/moo-shu-pork-bowls-49de0194.jpg # Local image or URL
-date: 2024-01-27 00:00:00+0000
+date: 2024-01-27T00:00:00-07:00 # -0700 = Americas/Los Angeles
 author: # Recipe Author or Organization (John Doe, HelloFresh)
 
 tags: [Quick, Easy] # Description, Season, Holiday (quick, easy, summer, christmas)
@@ -23,9 +23,6 @@ links:
     description: This saucy, sweet, and spicy dish is ready in just 15 minutes—that’s faster than it takes to order delivery! # AllRecipes is the world's largest collection of shareable recipes.
     website: https://www.hellofresh.com/recipes/moo-shu-pork-bowls-6419b2709bc03bbd4c0debd6 # https://allrecipes.com
     image: '{{< ogimage url="" >}}' # Dynamically updates the link image based on the website above.
-
-type: recipe # Points to \layouts\recipe\
-layout: single # Sets layout to {type}\single.html
     
 weight: # 1 | You can add weight to some posts to override the default sorting (date descending)
 
@@ -48,7 +45,7 @@ comments: false # Keep False
   - 1 tsp Cooking Oil
 
 ## Instructions
-1. Heat soup pot on medium-high heat. Once hot, add oil, then ground beef.
+1. • Wash and dry produce. • In a small pot, combine rice, ¾ cup water (1½ cups for 4 servings), and a pinch of salt. Bring to a boil, then cover and reduce heat to low. Cook until rice is tender, 15-18 minutes. Keep covered off heat until ready to serve. • Thinly slice scallions, separating whites from greens. Quarter lime.
 2. Cook ground beef until browned (about 10 minutes) and spoon off some excess fat.
 3. Add diced onion and garlic. Cook for four minutes, stirring occasionally.
 4. Add beef broth, diced tomatoes, tomato sauce, soy sauce, salt, pepper, Italian seasoning, and paprika. Stir well.

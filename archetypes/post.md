@@ -5,7 +5,7 @@ slug: # <post-title>
 title: Template
 description: Sample recipe layout.
 image: cover.png # Local image or URL
-date: 2022-03-06 00:00:00+0000
+date: 2022-03-06T00:00:00-0700 # -0700 = Americas/Los Angeles
 author: # Recipe Author or Organization (John Doe, HelloFresh)
 
 tags: [] # Description, Season, Holiday (quick, easy, summer, christmas)
@@ -23,9 +23,6 @@ links:
     description: # AllRecipes is the world's largest collection of shareable recipes
     website: # https://allrecipes.com
     image: '{{< ogimage url="" >}}' # Dynamically updates the link image based on the website above
-
-type: recipe # Points to \layouts\recipe\
-layout: single # Sets layout to {type}\single.html
  
 weight: # 1 | You can add weight to some posts to override the default sorting (date descending)
 
