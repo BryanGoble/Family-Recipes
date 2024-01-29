@@ -6,7 +6,7 @@ title: Moo Shu Pork Bowls
 description: "This saucy, sweet, and spicy dish is ready in just 15 minutes—that’s faster than it takes to order delivery! Ground pork is browned with crisp cabbage and scallions, then simmered in a bold, punchy sauce of hoisin, Thai chili sauce, sweet soy glaze, and lime juice. It’s all spooned over buttery rice and garnished with sesame seeds for a nutty crunch. Prepare to be bowled over!"
 image: https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_400,q_30,w_800/hellofresh_s3/image/moo-shu-pork-bowls-49de0194.jpg # Local image or URL
 date: 2024-01-27T00:00:00-07:00 # -0700 = Americas/Los Angeles
-author: # Recipe Author or Organization (John Doe, HelloFresh)
+author: HelloFresh # Recipe Author or Organization (John Doe, HelloFresh)
 
 tags: [Quick, Easy] # Description, Season, Holiday (quick, easy, summer, christmas)
 categories: [Dinner, "Main Course", Pork] # Main Course, Dessert, Snack, Dinner
@@ -14,8 +14,8 @@ cuisines: [Thai] # Region (French, American, Mediterranean)
 allergens: [Sesame, Soy, Wheat, Milk] # Sesame, Soy, Wheat, Nuts, Milk
 
 calories: 760 # 500 + kcal
-preptime: 10
-cooktime: 60
+preptime: 5
+cooktime: 20
 servings: 2
 
 links:

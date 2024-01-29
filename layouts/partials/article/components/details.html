@@ -40,6 +40,15 @@
     {{ $showFooter := or $showDate $showReadingTime }}
     {{ if $showFooter }}
     <footer class="article-time">
+        {{ if .Params.author }}
+            <div>
+                {{ partial "helper/icon" "author" }}
+                <a href="{{ with index .Params.links 0 }}{{ .website }}{{ end }}" class="article-time--published" target="_blank">
+                    {{- .Params.author -}}
+                </a>
+            </div>
+        {{ end }}
+
         {{ if $showDate }}
             <div>
                 {{ partial "helper/icon" "date" }}
