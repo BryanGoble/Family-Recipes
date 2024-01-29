@@ -19,8 +19,7 @@ cooktime: # 180 = 3 Hours | In minutes
 servings: # X Dozen Cookies, X Servings, X Loafs
 
 links:
-  - title: # AllRecipes
-    description: # AllRecipes is the world's largest collection of shareable recipes
+  - description: # AllRecipes is the world's largest collection of shareable recipes
     website: # https://allrecipes.com
     image: '{{< ogimage url="" >}}' # Dynamically updates the link image based on the website above
  
