@@ -12,7 +12,7 @@
         {{ end }}
 
         <div>
-            <h3>Prep Time</h3>
+            <h3>{{ partial "helper/icon" "prepTime" }} | Prep Time</h3>
             <p>{{ $prepTimeString }}</p>
         </div>
     {{ end }}
@@ -29,14 +29,31 @@
         {{ end }}
 
         <div>
-            <h3>Cooking Time</h3>
+            <h3>{{ partial "helper/icon" "cookingTime" }} | Cooking Time</h3>
             <p>{{ $cookTimeString }}</p>
+        </div>
+    {{ end }}
+
+    {{ with .Params.totalTime }}
+        {{ $totalTime := . | int }}
+        {{ $totalTimeString := "" }}
+        {{ if lt $totalTime 60 }}
+            {{ $totalTimeString = printf "%d minutes" $totalTime }}
+        {{ else }}
+            {{ $hours := div $totalTime 60 }}
+            {{ $minutes := mod $totalTime 60 }}
+            {{ $totalTimeString = printf "%d hours %d minutes" $hours $minutes }}
+        {{ end }}
+
+        <div>
+            <h3>{{ partial "helper/icon" "totalTime" }} | Total Time</h3>
+            <p>{{ $totalTimeString }}</p>
         </div>
     {{ end }}
 
     {{ with .Params.servings }}
         <div>
-            <h3>Servings</h3>
+            <h3>{{ partial "helper/icon" "servings" }} | Servings</h3>
             <p>{{ . }}</p>
         </div>
     {{ end }}
@@ -44,7 +61,7 @@
     {{ with .Params.calories }}
         {{ $calories := . | int }}
         <div>
-            <h3>Calories</h3>
+            <h3>{{ partial "helper/icon" "calories" }} | Calories</h3>
             <p>{{ $calories }} Kcal</p>
         </div>
     {{ end }}

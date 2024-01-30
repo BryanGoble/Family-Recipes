@@ -16,6 +16,7 @@ allergens: [] # Sesame, Soy, Wheat, Nuts, Milk
 calories: # 500 + kcal
 preptime: # 10 | In minutes
 cooktime: # 180 = 3 Hours | In minutes
+totaltime: # 190 = preptime + cooktime | In minutes
 servings: # X Dozen Cookies, X Servings, X Loafs
 
 links:
@@ -40,22 +41,22 @@ comments: false # Keep False
 ## Instructions
 
 ### Prep & Make Slaw
-• Wash and dry produce.
-• Roughly chop cilantro. Halve, core, and thinly slice green pepper.
-• In a medium bowl, toss together coleslaw mix, half the vinegar (all for 4 servings), half the cilantro, 1 tsp sugar (2 tsp for 4), and a pinch of salt until thoroughly combined.
+- Wash and dry produce.
+- Roughly chop cilantro. Halve, core, and thinly slice green pepper.
+- In a medium bowl, toss together coleslaw mix, half the vinegar (all for 4 servings), half the cilantro, 1 tsp sugar (2 tsp for 4), and a pinch of salt until thoroughly combined.
 
 ### Cook Pepper & Pork
-• Heat a drizzle of oil in a large pan over medium-high heat. Add green pepper and cook until slightly softened, 2-3 minutes.
-• Add pork* and season with salt and pepper. Cook, breaking up meat into pieces, until browned and cooked through, 4-6 minutes.
-• Stir in sweet soy glaze; cook until everything is coated and glaze has thickened, 1-2 minutes. Remove pan from heat.
+- Heat a drizzle of oil in a large pan over medium-high heat. Add green pepper and cook until slightly softened, 2-3 minutes.
+- Add pork* and season with salt and pepper. Cook, breaking up meat into pieces, until browned and cooked through, 4-6 minutes.
+- Stir in sweet soy glaze; cook until everything is coated and glaze has thickened, 1-2 minutes. Remove pan from heat.
 
 > Swap in beef for pork, if desired.
 
+> Ground Beef is fully cooked when internal temperature reaches 160°.
+
 ### Mix Mayo & Warm Tortillas
-• Meanwhile, in a small bowl, combine mayonnaise with Sriracha to taste. Season with salt and pepper.
-• Wrap tortillas in damp paper towels and microwave until warm and pliable, 30 seconds.
+- Meanwhile, in a small bowl, combine mayonnaise with Sriracha to taste. Season with salt and pepper.
+- Wrap tortillas in damp paper towels and microwave until warm and pliable, 30 seconds.
 
 ### Serve
-• Divide tortillas between plates and fill with pork mixture and slaw (draining first). Top with Sriracha mayo, crispy fried onions, and remaining cilantro. Serve.
-
-> Ground Beef is fully cooked when internal temperature reaches 160°.
+- Divide tortillas between plates and fill with pork mixture and slaw (draining first). Top with Sriracha mayo, crispy fried onions, and remaining cilantro. Serve.
