@@ -75,7 +75,49 @@
 
     <hr>
 
+    {{ with .Params.ingredients }}
+        <h2>Ingredients</h2>
+    {{ end }}
+
+    {{ if and .Params.instructionTitles .Params.instructions }}
+        <h2>Instructions</h2>
+
+        {{ $titles := .Params.instructionTitles }}
+        {{ $instructions := .Params.instructions }}
+        {{ $length := math.Min (len $titles) (len $instructions) }}
+
+        {{ range seq 0 $length }}
+            <h3>{{ index $titles . }}</h3>
+            {{ $instruction := index $instructions . }}
+            {{ $tips := split $instruction ">" }}
+            {{ $mainInstructions := index $tips 0 }}
+            {{ $instructionsSplit := split (trim $mainInstructions " ") "•" }}
+            {{ if in $mainInstructions "•" }}
+                <ul>
+                    {{ range seq (sub (len $instructionsSplit) 1) }}
+                        <li>
+                            {{ index $instructionsSplit . }}
+                        </li>
+                    {{ end }}
+                </ul>
+            {{ else }}
+                {{ $mainInstructions }}
+            {{ end }}
+            {{ $tipsLength := len $tips }}
+            {{ if gt $tipsLength 1 }}
+                {{ range seq $tipsLength }}
+                    {{ if ne (trim (index $tips .) " ") "" }}
+                        <blockquote>
+                            {{ index $tips . }}
+                        </blockquote>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+
     <!-- Refer to https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5 -->
-    {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
-    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+    {{/*  {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}  */}}
 </section>

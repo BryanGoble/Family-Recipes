@@ -1,14 +1,15 @@
 <div class="article-list--compact links">
+    {{ $title := .Title }}
     {{ range $i, $link := .Params.links }}
         <article>
             <a href="{{ $link.website }}" target="_blank" rel="noopener">
                 <div class="article-details">
                     <h2 class="article-title">
-                        {{- $link.title -}}
+                        {{ $title }}
                     </h2>
                     <footer class="article-time">
                         {{ with $link.description }}
-                            {{ . }}
+                            {{ . | truncate 375 }}
                         {{ else }}
                             {{ $link.website }}
                         {{ end }}
