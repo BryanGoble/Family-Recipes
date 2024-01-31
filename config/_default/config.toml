@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://demo.stack.jimmycai.com"
+baseurl = "https://bryangoble.github.io/Family-Recipes/"
 languageCode = "en-us"
 paginate = 5
 title = "Family Recipes 🥪"
@@ -26,8 +26,9 @@ cuisine = 'cuisines'
   isHTML = true
   isPlainText = true
 
-# Define the styling parameters for categories, tags, cuisines
+
 [params]
+  # Define the styling parameters for categories, tags, cuisines
   [params.categoryStyle]
     background = "#739E82"
     color = "rgb(255 255 255 / 90%)"
@@ -39,3 +40,6 @@ cuisine = 'cuisines'
   [params.tagStyle]
     background = "#FF715B"
     color = "rgb(255 255 255 / 90%)"
+
+  [params.meta]
+    favicon = favicon.ico
