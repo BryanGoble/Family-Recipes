@@ -52,25 +52,25 @@ def scrape_recipe(recipe_url):
 
     print(f"Recipe data for {recipe_data['title']} has been scraped and saved to {draft_path}index.md.")
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <Recipe_URL>")
-        sys.exit(1)
-
-    url = sys.argv[1]
-    scrape_recipe(url)
-    
-# def scrape_recipes_from_file(file_path):
-#     with open(file_path, 'r') as file:
-#         recipe_urls = file.read().splitlines()
-
-#     for url in recipe_urls:
-#         scrape_recipe(url)
-
 # if __name__ == "__main__":
 #     if len(sys.argv) != 2:
-#         print("Usage: python script.py <Recipe_URLs_File>")
+#         print("Usage: python script.py <Recipe_URL>")
 #         sys.exit(1)
 
-#     urls_file = sys.argv[1]
-#     scrape_recipes_from_file(urls_file)
+#     url = sys.argv[1]
+#     scrape_recipe(url)
+    
+def scrape_recipes_from_file(file_path):
+    with open(file_path, 'r') as file:
+        recipe_urls = file.read().splitlines()
+
+    for url in recipe_urls:
+        scrape_recipe(url)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <Recipe_URLs_File>")
+        sys.exit(1)
+
+    urls_file = sys.argv[1]
+    scrape_recipes_from_file(urls_file)
