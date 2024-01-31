@@ -2,7 +2,7 @@
 draft: true # Use this only for setting draft status
 hidden: false # Use this to hide unwanted recipes
 slug: # <post-title>
-title: '{{ recipe.title }}'
+title: {{ recipe.title }}
 description: "{{ recipe.description }}"
 image: {{ recipe.image }}
 date: {{ recipe.date }}
