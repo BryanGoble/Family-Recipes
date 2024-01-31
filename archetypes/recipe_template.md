@@ -28,6 +28,8 @@ weight: # 1 | You can add weight to some posts to override the default sorting (
 
 comments: false # Keep False
 
+ingredients: {{ recipe.ingredients }}
+
 instructionTitles: {{ recipe.instructionTitles }}
 instructions: {{ recipe.instructions }}
 ---

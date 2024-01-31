@@ -76,7 +76,18 @@
     <hr>
 
     {{ with .Params.ingredients }}
+        {{ $ingredients := . }}
+        {{ $length := len $ingredients}}
+
         <h2>Ingredients</h2>
+
+        <ul>
+            {{ range seq 0 (sub $length 1) }}
+                <li>
+                    {{ index $ingredients . }}
+                </li>
+            {{ end }}
+        </ul>
     {{ end }}
 
     {{ if and .Params.instructionTitles .Params.instructions }}
