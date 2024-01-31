@@ -42,4 +42,4 @@ cuisine = 'cuisines'
     color = "rgb(255 255 255 / 90%)"
 
   [params.meta]
-    favicon = favicon.ico
+    favicon = true
