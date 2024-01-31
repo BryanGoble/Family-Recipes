@@ -4,7 +4,7 @@
             {{ range (.GetTerms "categories") }}
                 <a href="{{ .RelPermalink }}" style="background-color: {{ with .Params.style }}{{ .background }}{{ else }}{{ with $.Site.Params.categoryStyle }}{{ .background }}{{ end }}{{ end }};
                                                         color: {{ with .Params.style }}{{ .color }}{{ else }}{{ with $.Site.Params.categoryStyle }}{{ .color | safeCSS }}{{ end }}{{ end }};">
-                    {{ .LinkTitle }}
+                    {{ .LinkTitle | title }}
                 </a>
             {{ end }}
         </header>
@@ -15,7 +15,7 @@
         {{ range (.GetTerms "cuisines") }}
             <a href="{{ .RelPermalink }}" style="background-color: {{ with .Params.style }}{{ .background }}{{ else }}{{ with $.Site.Params.cuisineStyle }}{{ .background }}{{ end }}{{ end }};
                                                     color: {{ with .Params.style }}{{ .color }}{{ else }}{{ with $.Site.Params.cuisineStyle }}{{ .color | safeCSS }}{{ end }}{{ end }};">
-                {{ .LinkTitle }}
+                {{ .LinkTitle | title }}
             </a>
         {{ end }}
     </header>
