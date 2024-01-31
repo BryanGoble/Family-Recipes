@@ -40,6 +40,3 @@ cuisine = 'cuisines'
   [params.tagStyle]
     background = "#FF715B"
     color = "rgb(255 255 255 / 90%)"
-
-  [params.meta]
-    favicon = true
