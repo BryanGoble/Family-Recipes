@@ -1,5 +1,28 @@
 <section class="article-content">
     <hr>
+    {{ if .Params.allergens }}
+        {{ $allergens := .Params.allergens }}
+        <div>
+            <h3>{{ partial "helper/icon" "allergens" }} | Allergens</h3>
+            {{ $length := len $allergens }}
+            <ul>
+                {{ range seq 0 (sub $length 1) }}
+                <li>
+                    {{ index $allergens . }}
+                </li>
+                {{ end }}
+            </ul>
+            {{/*  {{ range seq (len .Params.allergens) }}
+                <p>{{ index .Params.allergens  }}</p>
+            {{ end }}  */}}
+        </div>
+    {{ else }}
+        <div>
+            <h3>{{ partial "helper/icon" "allergens" }} | Allergens</h3>
+            <p>None</p>
+        </div>
+    {{ end }}
+
     {{ with index .Params.prepTime 1 }}
         {{/*  {{ $prepTime := . | int }}
         {{ $prepTimeString := "" }}
