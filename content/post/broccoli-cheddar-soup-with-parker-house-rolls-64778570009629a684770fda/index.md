@@ -1,5 +1,5 @@
 ---
-draft: true # Use this only for setting draft status
+draft: false # Use this only for setting draft status
 hidden: false # Use this to hide unwanted recipes
 slug: # <post-title>
 title: 'Creamy Tomato Soup with Parker House Rolls'
@@ -30,6 +30,6 @@ comments: false # Keep False
 
 ingredients: ['30 ounce Creamy Tomato Soup', '4 piece Parker House Rolls']
 
-instructionTitles: []
-instructions: ['RECOMMENDED: Bring a pot of water to a boil. Place bag in pot; cook for 20 minutes, then carefully remove. (Caution: Bag will be very hot.) Cut one corner with scissors and pour into a bowl. Top with cheese before serving.', 'MICROWAVE ALTERNATIVE: Cut one corner of the bag; pour soup into a microwave-safe container. (Do not microwave in cup.) Cover loosely with microwave-safe plastic wrap or a paper towel. Microwave, stirring halfway through, 5-6 minutes. (Caution: Container and soup will be very hot.) Top with cheese before serving.', 'ROLLS: Enjoy! (If desired, preheat oven to 400 degrees. Bake rolls until warmed, 4-6 minutes.)']
+instructionTitles: ['Recommended', 'Microwave Alternative', 'Rolls']
+instructions: ['Preheat oven to 400 degrees. Bring a pot of water to a boil. Place bag in pot; cook for 20 minutes, then carefully remove. Cut one corner with scissors and pour into a bowl. Top with cheese before serving. > Caution: Bag will be very hot.', 'Cut one corner of the bag; pour soup into a microwave-safe container. (Do not microwave in cup.) Cover loosely with microwave-safe plastic wrap or a paper towel. Microwave, stirring halfway through, 5-6 minutes. Top with cheese before serving. > Caution: Container and soup will be very hot.', 'Bake rolls until warmed, 4-6 minutes. Enjoy!']
 ---
